@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis heroes</title>
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 98vh;
+      gap: 10px;
+    }
+
+    .player {
+      flex: 1;
+      max-width: 500px;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      font-family: 'Bacasime Antique', serif;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .rank {
+      font-size: 6rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .grand-slam {
+      font-size: 3rem;
+      margin-bottom: 2px;
+    }
+
+  
+
+    
+
+    #first {
+      color: gold;
+    }
+
+   #second {
+      color: silver;
+    }
+
+    #third {
+      color: rgb(163, 163, 24);
+    }
+
+    .flex-container img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pic {
+      height: 100;
+      width: 100;
+      margin-bottom: 5px;
+      border: 2px white;
+      border-style: outset;
+    }
+
+    .flag {
+      height: 75px;
+      width: 110px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1250px) {
+      .flex-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="flex-container">
+  <div class = player one>
+    <p id="first" class="rank">#1</p>
+    <p class="name">Novak Djokovic</p>
+    <img class="flag" src="https://www.worldometers.info/img/flags/small/tn_ri-flag.gif" alt="Serbia flag" />
+    <img class="pic" src="https://www.atptour.com/-/media/tennis/players/head-shot/2019/02/25/18/18/djokovic_head_ao19.png?sc=0&hash=D882F4726423BFE525505F92029ECE00 alt="Novak's pic"/>
+    <p class="grand-slam">23 grand slams</p>
+  </div>
+
+  <div class = player two>
+    <p id="second" class="rank">#2</p>
+    <p class="name">Rafael Nadal</p>
+    <img class="flag" src="https://www.worldometers.info/img/flags/small/tn_sp-flag.gif" alt="Spain flag" />
+    <img class="pic" src="https://www.atptour.com/-/media/tennis/players/head-shot/2022/05/25/15/47/nadal-head-2022-may.png?sc=0&hash=24B112BA5207C1CACABFBA790A65803E" alt="Rafa's pic"/>
+    <p class="grand-slam">22 grand slams</p>
+  </div>
+
+  <div class = player three>
+    <p id="third" class="rank">#3</p>
+    <p class="name">Roger Federer</p>
+    <img class="flag" src="https://www.worldometers.info/img/flags/small/tn_sz-flag.gif" alt="Switzerland flag" />
+    <img class="pic" src="https://www.atptour.com/-/media/tennis/players/head-shot/2020/02/26/11/55/federer_head_ao20.png?sc=0&hash=7A17A4E9C10DF90A2C987081C7EEE1E8" alt="Roger's pic"/>
+    <p class="grand-slam">20 grand slams</p>  
+  </div>
+</div>
+  
+</body>
+</html>
