@@ -1,0 +1,1 @@
+alert("Hello! Thank you so much for visiting our website today! Hope you enjoy it!");
