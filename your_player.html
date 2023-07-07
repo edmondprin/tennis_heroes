@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pick a player!</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Bacasime Antique', serif;
+    }
+    
+    legend {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    fieldset {
+      margin-top: 20px;
+    }
+
+    input[type=text] {
+      font-size: 1.5rem;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
+
+p {
+  font-style: italic;
+  font-size: 25px;
+}
+
+    input[type=submit] {
+      background-color: #71837c;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+
+textarea {
+  font-size: 1.5rem;
+}
+  </style>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Your name</legend>
+      <label for="name">First name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="country">Country of residence:</label>
+      <input type="text" id="country" name="country"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Your favorite player</legend>
+      <p>Who is your favorite tennis player of all times?</p>
+      <input type="radio" name="preferredPlayer" value="Nole">
+      <label for="Nole">Novak Djokovic</label><br>
+      <input type="radio" name="preferredPlayer" value="Rafa">
+      <label for="Rafa">Rafael Nadal</label><br>
+      <input type="radio" name="preferredPlayer" value="Roger">
+      <label for="Roger">Roger Federer</label><br>
+      <input type="radio" name="preferredPlayer" value="Andy">
+      <label for="Andy">Andy Murray</label><br>
+      <input type="radio" name="preferredPlayer" value="Henri">
+      <label for="Henri">Henri Leconte</label><br>
+      <input type="radio" name="preferredPlayer" value="Other">
+      <label for="Other">Other</label><br>
+      <input type="radio" name="preferredPlayer" value="None">
+      <label for="None">I hate tennis, so leave me alone</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Your feedback</legend>
+      <p>Please share any feedback about this website:</p>
+      <textarea name="feedback" row="5" cols="60" maxlength="600" wrap="hard"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

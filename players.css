@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  font-family: 'Bacasime Antique', serif;
+  height: 97vh;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+  float: right;
+  margin-right: 5px;
+  border-style: inset;
+}
+
+.number {
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+  @media (max-width: 1250px) {
+    .pricing-container {
+      flex-direction: column;
+      height: 300%;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      font-style: oblique;
+    }
+  }
